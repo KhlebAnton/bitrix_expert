@@ -1455,6 +1455,13 @@ z-index: 2;
     display: block;
     background: url('../images/clip.svg') 50% / contain no-repeat;
 }
+@media (min-width: 1930px) {
+.hero_img {
+   left: calc(50% - 150px);
+    right: auto;
+
+}
+}
 @media (max-width: 1600px) {
     .hero_img {
         width: 1100px;
