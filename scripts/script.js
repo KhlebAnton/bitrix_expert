@@ -40,42 +40,42 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    const header = document.querySelector('.header');
-    let lastScroll = 0;
-    const scrollThreshold = 10;
+    // const header = document.querySelector('.header');
+    // let lastScroll = 0;
+    // const scrollThreshold = 10;
 
-    function hideHeader() {
-        header.classList.add('is-hidden');
-    }
+    // function hideHeader() {
+    //     header.classList.add('is-hidden');
+    // }
 
 
-    function showHeader() {
-        header.classList.remove('is-hidden');
-    }
+    // function showHeader() {
+    //     header.classList.remove('is-hidden');
+    // }
 
-    function handleScroll() {
-        const currentScroll = window.pageYOffset;
+    // function handleScroll() {
+    //     const currentScroll = window.pageYOffset;
 
-        if (currentScroll <= 0) {
-            showHeader();
-            lastScroll = currentScroll;
-            return;
-        }
+    //     if (currentScroll <= 0) {
+    //         showHeader();
+    //         lastScroll = currentScroll;
+    //         return;
+    //     }
 
-        if (Math.abs(currentScroll - lastScroll) < scrollThreshold) {
-            return;
-        }
+    //     if (Math.abs(currentScroll - lastScroll) < scrollThreshold) {
+    //         return;
+    //     }
 
-        if (currentScroll > lastScroll) {
-            hideHeader();
-        } else {
-            showHeader();
-        }
+    //     if (currentScroll > lastScroll) {
+    //         hideHeader();
+    //     } else {
+    //         showHeader();
+    //     }
 
-        lastScroll = currentScroll;
-    }
+    //     lastScroll = currentScroll;
+    // }
 
-    window.addEventListener('scroll', handleScroll);
+    // window.addEventListener('scroll', handleScroll);
 
     const swiperCase = new Swiper('.swiper_cases', {
         loop: false,

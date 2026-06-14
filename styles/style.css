@@ -126,7 +126,7 @@ section:not(.hero) {
     padding-bottom: 20px;
     background: #010510;
 
-    position: fixed;
+    position: absolute;
     z-index: 10;
     top: 0;
     left: 0;
@@ -134,9 +134,9 @@ section:not(.hero) {
     transition: transform .3s ease;
 }
 
-.header.is-hidden {
+/* .header.is-hidden {
     transform: translateY(-100%);
-}
+} */
 
 .logo-wrapper {
     display: flex;
@@ -1757,6 +1757,7 @@ z-index: 2;
 
     .header {
         padding: 16px 0;
+        position: fixed;
     }
 
     .logo-wrapper::before {
